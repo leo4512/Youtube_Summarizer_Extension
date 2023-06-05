@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      body {
-        width: 200px;
-        height: 200px;
-        background-color: white;
-      }
-      #loading {
-        display: none;
-        border: 16px solid #f3f3f3; 
-        border-top: 16px solid #3498db; 
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        animation: spin 2s linear infinite;
-      }
-      @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="apiKeyContainer">
-      <input type="text" id="apiKey" placeholder="Enter API Key">
-      <button id="saveApiKey">Save</button>
-    </div>
-    <select id="language">
-      <option value="english">English</option>
-      <option value="chinese">中文</option>
-      <option value="spanish">Español</option>
-      <option value="french">Français</option>
-      <option value="german">Deutsch</option>
-      <option value="italian">Italiano</option>
-      <option value="dutch">Nederlands</option>
-      <option value="russian">Русский</option>
-      <option value="japanese">日本語</option>
-      <option value="korean">한국어</option>
-      <option value="portuguese">Português</option>
-      <option value="arabic">العربية</option>
-    </select>
-    <button id="summarizeVideo">Summarize Video</button>
-    <div id="loading"></div>
-    <div id="summary"></div>
-    <script src="popup.js"></script>
-  </body>
+	<head>
+		<style>
+			body {
+				width: 200px;
+				height: 200px;
+				background-color: white;
+			}
+			#loading {
+				display: none;
+				border: 16px solid #f3f3f3;
+				border-top: 16px solid #3498db;
+				border-radius: 50%;
+				width: 50px;
+				height: 50px;
+				animation: spin 2s linear infinite;
+			}
+			@keyframes spin {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="apiKeyContainer">
+			<input type="text" id="apiKey" placeholder="Enter API Key" />
+			<button id="saveApiKey">Save</button>
+		</div>
+		<select id="language">
+			<option value="english">English</option>
+			<option value="chinese">中文</option>
+			<option value="spanish">Español</option>
+			<option value="french">Français</option>
+			<option value="german">Deutsch</option>
+			<option value="italian">Italiano</option>
+			<option value="dutch">Nederlands</option>
+			<option value="russian">Русский</option>
+			<option value="japanese">日本語</option>
+			<option value="korean">한국어</option>
+			<option value="portuguese">Português</option>
+			<option value="arabic">العربية</option>
+		</select>
+		<button id="summarizeVideo">Summarize Video</button>
+		<div id="loading"></div>
+		<div id="summary"></div>
+		<script src="popup.js"></script>
+	</body>
 </html>
